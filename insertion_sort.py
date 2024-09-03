@@ -17,3 +17,29 @@ def insertion_sort_descending(arr):
 sample_array = [5, 2, 9, 1, 5, 6]
 sorted_array = insertion_sort_descending(sample_array)
 print("Sorted array in decreasing order:", sorted_array)
+# Test cases to validate the algorithm
+
+# Test case 1: Regular array with mixed numbers
+sample_array_1 = [5, 2, 9, 1, 5, 6]
+sorted_array_1 = insertion_sort_descending(sample_array_1)
+print("Sorted array in decreasing order:", sorted_array_1)  # Expected output: [9, 6, 5, 5, 2, 1]
+
+# Test case 2: Empty array
+sample_array_2 = []
+sorted_array_2 = insertion_sort_descending(sample_array_2)
+print("Sorted empty array:", sorted_array_2)  # Expected output: []
+
+# Test case 3: Array with one element
+sample_array_3 = [42]
+sorted_array_3 = insertion_sort_descending(sample_array_3)
+print("Sorted single-element array:", sorted_array_3)  # Expected output: [42]
+
+# Test case 4: Array with all elements the same
+sample_array_4 = [3, 3, 3, 3, 3]
+sorted_array_4 = insertion_sort_descending(sample_array_4)
+print("Sorted array with identical elements:", sorted_array_4)  # Expected output: [3, 3, 3, 3, 3]
+
+# Test case 5: Array that is already sorted in decreasing order
+sample_array_5 = [10, 8, 6, 4, 2]
+sorted_array_5 = insertion_sort_descending(sample_array_5)
+print("Sorted array already in decreasing order:", sorted_array_5)  # Expected output: [10, 8, 6, 4, 2]
